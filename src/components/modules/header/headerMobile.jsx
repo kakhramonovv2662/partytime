@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { headerNavElms, headerIcons } from '../../constants/header.constants';
-import { SvgIcon } from '../../components/svgIcon/svgIconComponent';
+import { headerNavElms } from '../../../constants/header.constants';
+import { SvgIcon } from '../../svgIcon/svgIconComponent';
 
 // eslint-disable-next-line react/prop-types
 const HeaderMobile = () => {
@@ -9,36 +9,17 @@ const HeaderMobile = () => {
   return (
     <>
       <div className='flex items-center justify-between p-5 lg:hidden'>
+        <a className='text-lg text-white transition-all' href='/'>
+          Party Time
+        </a>
+
         <button
-          className='border hover:bg-blue-100 focus:ring-4 focus:ring-blue-100 font-medium rounded-lg text-sm px-5 py-2 focus:outline-none'
+          className='font-medium rounded-lg text-sm px-5 py-2 focus:outline-none'
           type='button'
           onClick={() => setisOpen(!isOpen)}
         >
-          <SvgIcon iconName={'menu-icon'} stroke={'#000'} />
+          <SvgIcon iconName={'menu-icon'} stroke={'#fff'} fill={'#fff'} />
         </button>
-        <a className='text-lg text-general_color transition-all' href='/'>
-          Party Time
-        </a>
-        <ul className='flex items-center gap-7'>
-          {headerIcons.map(({ key, name }) => {
-            if (key > 2)
-              return (
-                <li key={key} className='cursor-pointer'>
-                  <SvgIcon
-                    hover={'#FFDD00'}
-                    iconName={name}
-                    width={'20px'}
-                    height={'20px'}
-                    stroke={'#000'}
-                  />
-                </li>
-              );
-          })}
-
-          <li className='w-12 h-12 cursor-pointer rounded-full bg-general_color transition-all flex items-center justify-center hover:bg-white'>
-            <SvgIcon iconName={'user-icon'} width={'20px'} height={'20px'} />
-          </li>
-        </ul>
       </div>
 
       <div
@@ -65,11 +46,11 @@ const HeaderMobile = () => {
         </button>
         <div className='py-4 overflow-y-auto'>
           <ul className='space-y-2 font-medium'>
-            {headerNavElms?.map(({ key, name }) => {
+            {headerNavElms?.map(({ key, name, route }) => {
               return (
-                <li key={key}>
+                <li key={key} onClick={() => setisOpen(!isOpen)}>
                   <a
-                    href='/'
+                    href={route}
                     className='flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100'
                   >
                     {name}

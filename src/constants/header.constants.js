@@ -1,37 +1,32 @@
 export const headerNavElms = [
   {
     key: 1,
-    name: 'Thematic events'
+    name: 'Home',
+    route: '#home'
   },
   {
     key: 2,
-    name: 'Tent events'
+    name: 'About',
+    route: '#about'
   },
   {
     key: 3,
-    name: 'Special events'
+    name: 'Portfolio',
+    route: '#portfolio'
   },
   {
     key: 4,
-    name: 'Fun events'
+    name: 'Testimonial',
+    route: '#testimonial'
   },
   {
     key: 5,
-    name: 'Contact Us'
-  }
-];
-
-export const headerIcons = [
-  {
-    key: 1,
-    name: 'like-icon'
+    name: 'Services',
+    route: '#services'
   },
   {
-    key: 2,
-    name: 'search-icon'
-  },
-  {
-    key: 3,
-    name: 'basket-icon'
+    key: 6,
+    name: 'Contact Us',
+    route: '#contact'
   }
 ];
