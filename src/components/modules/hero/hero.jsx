@@ -26,7 +26,7 @@ const Hero = () => {
                 src='https://cdn.builder.io/api/v1/image/assets/TEMP/615654df8744a0cc342300ee14525675756088c478a3e8ae06eeaddf0cea2b86?'
                 className='aspect-[1.06] object-contain object-center w-[34px] overflow-hidden shrink-0 max-w-full'
               />
-              <p className='text-white text-xs leading-6 uppercase group-hover:text-general_color'>
+              <p className='text-white text-xs leading-6 uppercase group-hover:text-black'>
                 Play The Video
               </p>
             </a>

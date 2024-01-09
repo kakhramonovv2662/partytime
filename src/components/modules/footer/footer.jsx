@@ -1,8 +1,8 @@
-import { headerNavElms } from '../../../constants';
 import {
   footerCapabilityItems,
   footerSocialItems
 } from '../../../constants/footer.constants';
+import { headerNavElms } from '../../../constants/header.constants';
 
 const Footer = () => {
   return (

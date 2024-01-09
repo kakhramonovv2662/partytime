@@ -15,7 +15,7 @@ const Header = ({ className = '' }) => {
             return (
               <li key={key}>
                 <a
-                  className='text-white transition-all hover:text-general_color'
+                  className='text-white transition-all hover:text-black'
                   href={route}
                 >
                   {name}
@@ -26,7 +26,7 @@ const Header = ({ className = '' }) => {
         </ul>
         <Button
           text={'Get a Quote'}
-          className={'text-zinc-900 hover:bg-transparent'}
+          className={'text-zinc-900 hover:bg-black hover:border-black'}
         />
       </nav>
     </div>

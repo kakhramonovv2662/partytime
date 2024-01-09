@@ -1,3 +1,4 @@
+import { Button } from '../../layouts/button/button';
 import { SvgIcon } from '../../svgIcon/svgIconComponent';
 
 const ContactUs = () => {
@@ -135,9 +136,10 @@ const ContactUs = () => {
                 ></textarea>
               </div>
               <div>
-                <button className='hover:shadow-form rounded-md bg-general_color py-3 px-8 text-base font-semibold text-white outline-none'>
-                  Submit
-                </button>
+                <Button
+                  text={'Submit'}
+                  className={'text-zinc-900 hover:bg-black hover:border-black'}
+                />
               </div>
             </form>
           </div>
