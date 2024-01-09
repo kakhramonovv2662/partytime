@@ -1,21 +1,34 @@
-import { SvgIcon } from '../svgIcon/svgIconComponent';
+import { Button } from '../../layouts/button/button';
+import { SvgIcon } from '../../svgIcon/svgIconComponent';
 
 const ContactUs = () => {
   return (
-    <section className='mb-16'>
-      <h2 className='text-5xl text-center mb-5 font-bold'>Contact Us</h2>
-      <div className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]"></div>
+    <section className='my-16' id='contact'>
+      <div className='mx-auto text-center'>
+        <p className='relative text-red-500 text-xs font-semibold leading-4 tracking-[2px] uppercase self-center whitespace-nowrap mt-16 max-md:mt-10'>
+          Contact Us
+        </p>
+        <h2 className='relative text-zinc-900 text-4xl font-semibold leading-10 self-center mt-6 max-md:max-w-full'>
+          Lets Make Your Event Memorable!
+        </h2>
+        <p className='relative text-neutral-500 text-base leading-7 self-center my-5 max-md:max-w-full'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
       <div className='container mx-auto px-6 md:px-12'>
-        <div className='block rounded-lg bg-[hsla(0,0%,100%,0.7)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]'>
+        <div className="block rounded-lg bg-[url('https://websitedemos.net/event-management-04/wp-content/uploads/sites/638/2020/07/selective-focus-multi-color-confetti.jpg')] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 backdrop-blur-[30px]">
           <div className='mb-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4'>
             <div className='mx-auto mb-12 text-center lg:mb-0'>
               <SvgIcon
                 iconName={'united-state-icon'}
-                className='mx-auto mb-6 h-8 w-8 text-primary-400'
+                className='mx-auto mb-6 h-8 w-8'
                 width={'40px'}
                 height={'40px'}
+                stroke={'white'}
+                fill={'none'}
               />
-              <h6 className='font-medium text-white'>Unites States</h6>
+              <h6 className='font-medium text-white'>United Kingdom</h6>
             </div>
             <div className='mx-auto mb-12 text-center lg:mb-0'>
               <SvgIcon
@@ -26,9 +39,14 @@ const ContactUs = () => {
                 stroke={'white'}
                 fill={'none'}
               />
-              <h6 className='font-medium text-white'>New York, 94126</h6>
+              <h6 className='font-medium text-white'>
+                Trafalgar Square, Charing Cross, London WC2N 5DN
+              </h6>
             </div>
-            <div className='mx-auto mb-6 text-center md:mb-0'>
+            <a
+              href='tel:+441234567890'
+              className='mx-auto mb-6 text-center md:mb-0'
+            >
               <SvgIcon
                 iconName={'phone-icon'}
                 className='mx-auto mb-6 h-8 w-8'
@@ -37,8 +55,8 @@ const ContactUs = () => {
                 stroke={'white'}
                 fill={'none'}
               />
-              <h6 className='font-medium text-white'>+ 01 234 567 89</h6>
-            </div>
+              <h6 className='font-medium text-white'>+44 123 456 7890</h6>
+            </a>
             <div className='mx-auto text-center'>
               <SvgIcon
                 iconName={'price-icon'}
@@ -118,9 +136,10 @@ const ContactUs = () => {
                 ></textarea>
               </div>
               <div>
-                <button className='hover:shadow-form rounded-md bg-general_color py-3 px-8 text-base font-semibold text-white outline-none'>
-                  Submit
-                </button>
+                <Button
+                  text={'Submit'}
+                  className={'text-zinc-900 hover:bg-black hover:border-black'}
+                />
               </div>
             </form>
           </div>

@@ -13,12 +13,12 @@ export default {
         general_color: '#FFDD00'
       },
       backgroundImage: {
-        thematic_event_img_one: "url('./src/assets/img/thematic-party1.png')",
-        thematic_event_img_two: "url('./src/assets/img/tent-party.png')",
-        thematic_event_img_three: "url('./src/assets/img/special-party.png')",
-        thematic_event_img_four: "url('./src/assets/img/fun-party.png')",
-        thematic_event_img_five: "url('./src/assets/img/local-party.png')",
-        thematic_event_img_six: "url('./src/assets/img/children-part.png')"
+        thematic_event_img_one: "url('./src/assets/img/thematic-party1.avif')",
+        thematic_event_img_two: "url('./src/assets/img/tent-party.avif')",
+        thematic_event_img_three: "url('./src/assets/img/special-party.avif')",
+        thematic_event_img_four: "url('./src/assets/img/fun-party.avif')",
+        thematic_event_img_five: "url('./src/assets/img/local-party.avif')",
+        thematic_event_img_six: "url('./src/assets/img/children-part.avif')"
       },
       animation: {
         scroll:

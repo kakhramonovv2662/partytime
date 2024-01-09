@@ -10,6 +10,6 @@ export const SvgIconContainer = styled.svg`
     stroke: ${props => props.hover || 'auto'};
   }
   &:hover {
-    fill: ${props => props.fillHover || '#fff'};
+    fill: ${props => props.fillHover || 'auto'};
   }
 `;
