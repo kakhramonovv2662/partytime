@@ -137,6 +137,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <Button
+                  type='submit'
                   text={'Submit'}
                   className={'text-zinc-900 hover:bg-black hover:border-black'}
                 />
