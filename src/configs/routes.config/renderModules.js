@@ -37,6 +37,13 @@ export const renderModuleRoutes = [
     )
   },
   {
+    title: 'Pricing Section',
+    path: '/',
+    component: React.lazy(() =>
+      import('../../components/modules/pircingCards/pircingCards.jsx')
+    )
+  },
+  {
     title: 'ContactUs Section',
     path: '/',
     component: React.lazy(() =>

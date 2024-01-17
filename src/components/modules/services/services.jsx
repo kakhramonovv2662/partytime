@@ -34,7 +34,7 @@ const Services = () => {
                 src={imgSrc}
                 className='aspect-[1.66] object-contain object-center w-full overflow-hidden'
               />
-              <h3 className='text-zinc-900 text-xl font-semibold leading-6 whitespace-nowrap justify-center pl-3 my-3 border-l-2 border-l-red-500 border-solid items-start max-md:pr-5'>
+              <h3 className='text-zinc-900 text-xl font-semibold leading-6 justify-center pl-3 my-3 border-l-2 border-l-red-500 border-solid items-start max-md:pr-5'>
                 {eventName}
               </h3>
               <p className='text-neutral-500 text-sm lg:text-base leading-7 pr-12'>
